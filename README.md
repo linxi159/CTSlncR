@@ -87,7 +87,7 @@ lncRNA_mRNA_exp <- as.matrix(lncRNA_mRNA_exp)
 # save(lncRNA_scRNA_norm, mRNA_scRNA_norm, lncRNA_scRNA_norm_filter,mRNA_scRNA_norm_filter, lncRNA_gene_pre, lncRNA_mRNA_exp,file = "Exp_247_lncRNAs_10208_mRNAs_276_single_cells_GSE71315.RData")
 load("Exp_247_lncRNAs_10208_mRNAs_276_single_cells_GSE71315.RData")
 
-# # 多核并行计算
+# Multi-core parallel computing
 # library(parallel)
 # #CSlncR_network_bootstrap_null <- CSlncR_net_bootstrap(lncRNA_scRNA_norm_filter, mRNA_scRNA_norm_filter, boxsize = 0.1, bootstrap_betw_point = 5, bootstrap_num = 1, p.value.cutoff = 0.01)
 # detectCores(logical = F)  # 8
