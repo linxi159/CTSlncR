@@ -1,6 +1,6 @@
 # CTSlncR
 Inferring cell-type-specific lncRNA regulation in the developing human neocortex with CTSlncR
-![](https://github.com/linxi159/CTSlncR/blob/main/figures/Figure_1.jpg) 
+![](https://github.com/linxi159/CTSlncR/blob/main/figures/Figure_1.tif) 
 
 ## Description of each directory and each file
 data: The preprocessed data from real scRNA-seq data in GEO.
@@ -19,13 +19,14 @@ step2_case_study.R: Running scripts for exploring cell-type-specific lncRNA regu
 
 ## The usage of CTSlncR
 Paste all files into a single folder (set the folder as the directory of R environment), the workflow of CTSlncR is implemented in CTSlncR.R. The users can simply run the scripts as follows.
-
+```
 * source("step2_case_study.R")
+```
 
 ## Quick example to use CTSlncR
 For identifying cell-type-specific lncRNA regulation, users should prepare lncRNA and mRNA single-cell co-expression data. Paste the datasets and our source file (CTSlncR.R) into a single folder (set the folder as the directory of R environment), users can use the following scripts to identify cell-type-specific lncRNA regulation. For convenience, the datasets prepared for users are from our datasets (Exp_247_lncRNAs_10208_mRNAs_276_single_cells_GSE71315.RData).
 ```
-* ## Load required R packages, please firstly install the following R packages before running scripts
+## Load required R packages, please firstly install the following R packages before running scripts
 library(pracma)
 library(WGCNA)
 library(igraph)
@@ -102,8 +103,3 @@ load("Exp_247_lncRNAs_10208_mRNAs_276_single_cells_GSE71315.RData")
                                                           boxsize = 0.1, bootstrap_betw_point = 5, 
                                                           bootstrap_num = 1, p.value.cutoff = 0.01)
 ```
-
-
-
-
-
