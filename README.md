@@ -20,7 +20,7 @@ step2_case_study.R: Running scripts for exploring cell-type-specific lncRNA regu
 ## The usage of CTSlncR
 Paste all files into a single folder (set the folder as the directory of R environment), the workflow of CTSlncR is implemented in CTSlncR.R. The users can simply run the scripts as follows.
 ```
-* source("step2_case_study.R")
+source("step2_case_study.R")
 ```
 
 ## Quick example to use CTSlncR
